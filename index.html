@@ -7,13 +7,19 @@
     <title>Richard Schott's Portfolio</title>
     <link href="" rel="stylesheet" type=text/css"> <!-- Font? -->
     <link rel="stylesheet" type="text/css" href="">
-    <script src="" type="text/javascript"></script>
+
   </head>
   <body>
     <header>
+		<h1>Current Date and Time</h1>
     </header>
-        <article>
-        </article>
+		<script>
+			now = new Date (1);
+			localtime = now.toString();
+			utctime = now.toGMTString();
+			document.write(<p><strong>Local time:</strong> " + localtime + "</p>");
+			document.write(<p><strong>UTC time:</strong> " + utctime + "</p>");
+		</script>
           <footer>
           </footer>
   </body>
